@@ -1,0 +1,57 @@
+<!--20111105금 비대면 2교시 레이아웃 첫 진도-->
+<!--5가지 해결 방안을 실험해볼 계획-->
+<!--5번: 정의된 클리어픽스 이용-->
+
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>스타일시트</title>
+            <style>
+                .box-gray
+                    {width: 850px;
+                    height: 30pxl;
+                    background-color: #BCBCBC;}
+
+
+                .box-blue
+                    {width: 400px;
+                    background-color: #0000FF;
+                    float: left;
+                    }  
+
+                .box-green
+                    {width: 400px;
+                    background-color: #00FF00;
+                    float: left;
+                    }  
+                
+                .box-red
+                    {width: 850px;
+                    height: 30px;
+                    background-color: #FF0000;
+                    clear: both;
+                    }
+
+                .clearfix:before, .clearfix::after
+                    {display: block;
+                    content:"";
+                    line-height: 0;}
+
+
+            </style>
+
+    </head>
+
+    <body>
+        <div class="box-gray clearfix">
+            <div class="box-blue">파란박스</div>
+            <div class="box-green">초록박스<br>초록박스<br>초록박스<br>초록박스</div>
+            <div class="box-red"></div>
+        </div>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,52 @@
+<!--20211104목 16:04 문서의 개념에서 벗어나서 배치의 개념을 적용시킬 float를 배워보자-->
+<!-- ex09.html (빨강별 블릿을 배경으로 깔고 패딩 넣어서 밀어주는 연습)을 참고하자-->
+<!--혼자서 해냄-->
+
+<!DOCTYPE html>
+
+<html lang="ko">
+        <meta charset="UTF-8">
+        <title>스타일시트</title>
+        <style>
+
+            ol  
+                {/*오더리스트라서 발생한 블릿 없애려면 none했지*/
+                list-style-image:url(".img/star.jpg");
+                }
+
+            li 
+                {
+                list-style-image:url("./img/star.jpg");
+                padding-left: 0px;
+                padding-right:10px;
+                float: left;
+                border-right: 3px solid #000000;
+                margin-left: 20px;
+                margin-right: 20px;
+                }
+
+            .notborder
+                {border-right: none;}    
+
+
+        </style>
+
+    </head>
+    
+    <body>
+        <ol>
+            <li>메뉴(1)</li>
+            <li>메뉴(2)</li>
+            <li>메뉴(3)</li>
+            <li>메뉴(4)</li>
+            <li class="notborder">메뉴(5)</li>
+        </ol>
+    </body>
+
+</html>
+
+
+<!--20111105금 비대면 1교시 과제 확인하기-->
+<!--블릿은 ol에서 없애도 되고 li에서 없애도 됨-->
+
+

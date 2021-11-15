@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*전체공통 CSS*/
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6,
+input, fieldset, legend, p, table, th, td, tr,
+textarea, button, form
+    {margin: 0px; padding:0px;}
+
+body
+    {font-family:"맑은 고딕", 돋음, 굴림;
+    font-size:12px;}
+
+a:link {text-decoration: none; font-size: 12px;}
+a:visited {text-decoration: none; font-size: 12px;}
+a:hover {text-decoration: none; font-size: 12px;}
+a: {text-decoration: none; font-size: 12px;}
+
+
+ol, ul
+    {list-style-type: none;}
+
+.clearfix 
+    {*zoom:1;}
+
+.clearfix:before, .clearfix:after 
+    {display:block; content:""; line-height: 0px;}
+
+
+.clearfix:after 
+    {clear:both;}
+
+
+
+/*레이아웃 공통 CSS*/
+#wrap
+    {width: 800px;
+    /*background-color: #FFFF00;*/
+    margin: 0px auto;}
+
+#header
+    {border-bottom: 1px solid #000000;}
+
+#navi
+    {background-color: #00FF00;}
+
+#contents
+    {background-color: #FF00FF;}
+
+#footer
+    {background-color: #FF0000;}
+
+
+/*헤더영역*/
+
+#header>h1
+    {float: left;
+    margin: 10px 0px 0px 0px;}
+
+#header>h1>a
+    {font-size: 35px;
+    color:#79B30B;}
+
+#header>ul
+    {float: right;
+    margin: 20px 0px 0px 0px;}
+
+li
+    {float: left;
+    margin: 0px 30px 0px 0px;
+    border}
+
+

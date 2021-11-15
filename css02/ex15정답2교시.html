@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>스타일시트</title>
+            <style>
+                ol
+                    {
+                    list-style-type: none;
+                    }
+
+                ol>li
+                    {
+                    float: left;
+                    border: 1px solid #000000;
+                    }
+
+                ol>li:after
+                    {
+                    content:">";
+                    padding: 0px 5px 0px 5px;
+                    }
+                    
+                ol>li.last:after
+                    {
+                    content: "" /*아무 것도 안 오게 하려 할 때 content:"(공백)" 이렇게 해야 함*/ 
+                    }
+
+
+            </style>
+        
+    </head>
+
+    <body>
+            <ol>
+                <li>홈</li>
+                <li>게시판</li>
+                <li>일반게시판</li>
+                <li>리스트</li>
+            </ol>
+
+        
+
+    </body>
+
+</html>

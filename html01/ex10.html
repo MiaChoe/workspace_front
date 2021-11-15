@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <meta charset="UTF-8">
+    <head>
+        <title>html5</title>
+    </head>
+
+    <body>
+        <!--개발자에게 가장 유용한 태그는 '폼 태그'이다. 관리하게 됨. 데이터받고 작업하게 됨-->
+        <!--form은 이 안에 있는 내용을 submit하게 되는 거야
+        <form action=""이거는 어디에 보낼지 주소 써-->
+        <!--file:///C:/javaStudy/workspace_front/html01/ex10.html?%EC%9C%
+            A0%EC%A0%80%EA%B0%80+%EC%93%B4+%EC%95%84%EC%9D%B4%EB%94%94=ddddd&upw=-->
+
+        <!--사용자가 입력한 값이 value에 해당-->
+        <!--name은 어느 용도인지를 나타내는 그릇에 해당-->
+        <!--checked는 미리 체크해놓을 경우-->
+
+         <form action="" method="get">   
+        
+            <label for="u-id">아이디</label> 
+            <input type="text" id="u-id" name="유저가 쓴 아이디" value="" placeholder="아이디를 입력하세요"><br>
+            
+            <label for="u-pw" method="get">패스워드</label>
+            <input type="password" id="u-pw" name="upw" placeholder="패스워드를 입력하세요"><br>
+            
+            <label for="u-gd" method="get">성별</label>
+            <input type="text" id="u-gd" name="gender" value="여자" placeholder="성별을 입력하세요"><br>
+            <input type="file" name="file" value=""><br>
+            <br>
+            
+            
+            <br>
+            <label for="chk-book">독서</label>
+            <input type="checkbox" id="chk-book" name="hobby" value="book" checked="checked"><br>
+
+            <laberl for="chk-music">음악</laberl>
+            <input type="checkbox" id="chk-music" name="hobby" value="music"><br>
+
+            <label>여행</label>
+            <input type="checkbox" id="chk-trip" name="hobby" value="trip"><br>
+            <br>
+
+
+            <br>
+            <label for="chk-dog">개</label>
+            <input type="checkbox" id="chk-dog" name="pet" value="dog" checked="checked"><br>
+
+            <laberl for="chk-cat">고양이</laberl>
+            <input type="checkbox" id="chk-cat" name="pet" value="cat"><br>
+
+            <label for="chk-book">독서</label>
+            <input type="checkbox" id="chk-bird" name="pet" value="bird"><br>
+            <br>
+
+
+            <br>
+            <label for="rdo-apple">사과</label>
+            <input type="radio" id="rdo-apple" name="fruit" value="apple"><br>
+            
+            <label for="rdo-grape">포도</label>
+            <input type="radio"id="rdo-grape" name="fruit" value="grape"><br>
+            
+            <label for="rdo-orange">오렌지</label>
+            <input type="radio" id="rdo-orange" name="fruit" value="orange"><br>
+            <br>
+
+
+            <br>
+            <label for="rdo-January">1월</label>
+            <input type="radio" id="rdo-January" name="month" value="January"><br>
+            
+            <label for="rdo-February">2월</label>
+            <input type="radio"id="rdo-February" name="month" value="February"><br>
+            
+            <label for="rdo-March">3월</label>
+            <input type="radio" id="rdo-March" name="month" value="March"><br>
+            <br>
+
+            <select name="telecom"> <!--<selected="selected"는 기본값>-->
+                <option value="" selected="selected">이동통신사를 선택해 주세요</option>
+                <option value="sk">SKT</option>
+                <option value="kt">KTF</option>
+                <option value="lg">LGT</option>
+                <option value="et">알뜰폰</option>
+            </select>
+            
+            <br>
+            <textarea name="contents">안녕하십니까?</textarea> 
+            <!--특이하게도 textarea는 br을 안 써도 띄어쓴다-->
+
+            <button type="submit">저장</button> <!--submit은 서버로 데이터 보내는 기능-->
+
+            <!--<input type="button" value="저장">--> <!--이 방법은 글씨만 되니 비추천
+            <button type="submit, button, reset">은 그림도 넣어지니 이걸 추천-->
+         </form>
+         
+
+
+
+
+        
+
+    <!--
+        <input type="text"><br>
+        <input type="password"><br>
+        <input type="file"><br>
+        <input type="radio"><br>
+        <input type="checkbox"><br>
+        <input type="hidden"><br>
+
+        <input type="email"><br>
+        <input type="number"><br>
+        <input type="search"><br>
+        <input type="date"><br>
+        <input type="month"><br>
+        <input type="color"><br>
+        -->
+
+
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 --> <!--가로세로 되는지 묻는 건 인라인/블록인 거 찾기-->
+        <!--블록이니까 div는 가로세로 먹어-->
+        <style>
+                .border-type
+                    {width: 300px;
+                    height: 150px;
+
+                    /*border-width: 5px;                
+                    border-style: ridge;
+                    border-color: blue;*/
+                       
+                    border: 5px solid #FFF000 /*위보다 방법 더 많이 씀 추천*/
+
+                    background-color: #FFF000;}
+
+                .border-4type
+                    {width:400px;
+                    height:200px;
+                
+                    border-top: 1px solid #FF0000;
+                    border-right: 10px double #FF0000; /*쌤 시계방향선호*/                
+                    border-bottom: 20px; dashed; #0000FF;
+                    border-left: 30px; dotted; #0000FF;
+                    
+                    background-color: #FFF000;}       
+
+
+
+
+        </style>    
+
+    </head>
+
+    <body>
+        <div class="border-type">
+            보더 연습입니다.
+       </div>
+       
+        <div class="border-4type">
+             보더 연습입니다.
+        </div>
+        
+
+    </body>
+
+</html>
